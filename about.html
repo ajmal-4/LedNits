@@ -1,0 +1,168 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Website Design - Easy Tutorials</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <a href='#' class="stt" title="scroll to top"></a>
+
+  <div class="whatsapp-btn-container">
+    <a class="whatsapp-btn" href="https://wa.me/91999999999"><i class="fab fa-whatsapp"></i></a>
+    <span>Contact Us</span>
+</div>
+
+    <section class="header">
+        <video autoplay muted loop class="video-bg">
+            <source src="video/lednits.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <nav>
+            <a href="index.html"><img src="images/lednits-logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="product.html">PRODUCTS</a></li>
+                    <li><a href="blog.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>   
+            <h1>About Us</h1>
+    </section>
+    
+    
+<!------- about us content -------->
+    
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>What We Are?</h1>     
+            <p>LedNits led Screen Solutions is dedicated to crafting and producing premium LED display boards tailored for diverse industries, backed by round-the-clock service support and nationwide delivery. With headquarters situated in Kochi and Trivandrum, we ensure seamless service across India.
+                Our proficiency, devotion to excellence, and unwavering focus on customer contentment are the cornerstones of our operation. Entrust your LED display requirements to us, and together, we'll elevate your business to new heights.</p>
+            <a href="product.html" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/videowall2.webp">
+        </div>
+    </div>   
+</section>
+<!-- Parallax division -->
+<div class="parallax">
+    <div class="parallax-content">
+        <div class="values">
+                <div class="values-col">
+                    <h2>Innovation</h2>
+                    <p>At LED Link, innovation isn't just a concept—it's our guiding principle. We leverage cutting-edge technology to drive our ambitions and perspectives forward. With the most advanced infrastructure and contemporary designs, we cater to all creative needs with precision and excellence.</p>
+                </div>
+                <div class="values-col">
+                    <h2>Transparency</h2>
+                    <p>Transparency is the cornerstone of our ethos. We prioritize credibility in our services, ensuring uninterrupted follow-up and faultless execution. Every stage of our service is marked by sincerity and integrity.</p>
+                </div>
+                <div class="values-col">
+                    <h2>Accessibility</h2>
+                    <p>We prioritize accessibility, ensuring that assistance is available to you at any time, from anywhere. Our dedicated team is committed to addressing your concerns promptly and effectively, ensuring seamless support whenever you need it.</p>
+                </div>
+        </div>
+    </div>
+</div>
+    
+<!-------- footer ---------->
+
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <h3>Led<span>Nits</h3>
+
+      <p class="footer-links">
+        <a href="index.html">Home</a>
+        
+        <a href="#" class="link-2">About</a>
+      
+        <a href="product.html">Products</a>
+      
+        <a href="blog.html">Gallery</a>
+        
+        <a href="contact.html">Contact</a>
+      </p>
+
+      <p class="footer-company-name">Led Nits © 2015</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+1.555.555.5555</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">support@company.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>About the company</span>
+        Led Nits is dedicated to designing and manufacturing high-quality LED display boards, tailored to meet the needs of various industries with unwavering commitment and innovation.
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+
+      </div>
+
+    </div>
+
+  </footer> 
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+    let sttBtn = document.querySelector('.stt');
+
+    // Hide the scroll-to-top button initially
+    sttBtn.style.display = 'none';
+    
+    // Show or hide the scroll-to-top button based on the scroll position
+    window.addEventListener('scroll', function () {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            sttBtn.style.display = 'block';
+        } else {
+            sttBtn.style.display = 'none';
+        }
+    });
+</script> 
+    
+</body>
+</html>    
