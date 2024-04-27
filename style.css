@@ -499,13 +499,6 @@ nav .fa {
     align-items: center;
     border-radius: 12px;
     /* border: 4px solid currentColor; */ /* Remove or comment out this line */
-    box-shadow: 
-      /* --- "glass" tube --- */
-      /* inside */ inset 0 0 0 2px rgba(0, 0, 0, 0.15),
-      /* outside */      0 0 0 2px rgba(0, 0, 0, 0.15),
-      /* --- glow --- */
-      /* inside */ inset 0 0 var(--box-blur) var(--glow),
-      /* outside */      0 0 var(--box-blur) var(--glow);
     color: var(--color, white);
     display: inline-flex;
     flex-direction: column;
