@@ -806,6 +806,12 @@ h1{
 .footer-distributed h3 span {
   color: lightseagreen;
 }
+.footer-distributed .footer-left img {
+  /* Set the dimensions of the image to match the size of the h3 */
+  width: auto;
+  height: 38px; /* Adjust this value according to your needs */
+  /* Apply additional styles if needed */
+}
 
 /* Footer links */
 .footer-distributed .footer-links {
